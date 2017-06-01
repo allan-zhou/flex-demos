@@ -1,0 +1,132 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo08</title>
+    <style>
+        .item {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid #000;
+            width: 350px;
+            height: 180px;
+            margin-bottom: 50px;
+            /*justify-content: center;
+        align-items: center;*/
+        }
+
+        #item01 {
+            background-color: aliceblue;
+        }
+
+        #item02 {
+            background-color: antiquewhite;
+        }
+
+        #item03 {
+            background-color: aqua;
+        }
+
+        #item04 {
+            background-color: aquamarine;
+        }
+
+        #item05 {
+            background-color: azure;
+        }
+
+        #item06 {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        flex-shrink: [number]，默认值为1,
+    </h1>
+    <h3>flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。</h3>
+
+    <h4>未设置flex-shrink</h4>
+    <p>flex-shrink默认值为1，空间不足时，项目等比例缩小。</p>
+    <div id="container01" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+    </div>
+
+    <h4>未设置flex-shrink</h4>
+    <p>flex-shrink默认值为1。设置Container：flex-warp:wrap,则flex-shrink不起作用。</p>
+    <div id="container02" class="container" style="flex-wrap:wrap;">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+
+    <h4>flex-shrink:0,1,0,1,1</h4>
+    <p>item01、item03的flex-shrink设置为0，则大小不变。其他item保持默认值1，则等比例缩小</p>
+    <p style="color:red;">注意：如果item02、item04、item05不设置word-break: break-all则会overflow其容器Container</p>
+    <div id="container03" class="container">
+        <div id="item01" class="item" style="flex-shrink:0;">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item" style="flex-shrink:0;">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+    </div>
+
+    <h4>flex-shrink:0,1,1,2,4</h4>
+    <p>item01保持不变。item02~item05按照1:1:2:4的比例缩小，分配容器剩余空间（Container-item01）</p>
+    <div id="container04" class="container">
+        <div id="item01" class="item" style="flex-shrink:0;">
+            item01
+        </div>
+        <div id="item02" class="item" style="flex-shrink:1;">
+            item02
+        </div>
+        <div id="item03" class="item" style="flex-shrink:1;">
+            item03
+        </div>
+        <div id="item04" class="item" style="flex-shrink:2;">
+            item04
+        </div>
+        <div id="item05" class="item" style="flex-shrink:4; word-break:break-all;">
+            item05
+        </div>
+    </div>
+</body>
+
+</html>
