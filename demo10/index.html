@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo10</title>
+    <style>
+        .item {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid #000;
+            width: 400px;
+            height: 180px;
+            margin-bottom: 50px;
+            /*justify-content: center;
+        align-items: center;*/
+        }
+
+        #item01 {
+            background-color: aliceblue;
+        }
+
+        #item02 {
+            background-color: antiquewhite;
+        }
+
+        #item03 {
+            background-color: aqua;
+        }
+
+        #item04 {
+            background-color: aquamarine;
+        }
+
+        #item05 {
+            background-color: azure;
+        }
+
+        #item06 {
+            background-color: beige;
+        }
+
+        .heightAuto{ height: auto;}
+    </style>
+</head>
+
+<body>
+    <h1>
+        align-self:auto(默认值) | flex-start | flex-end | center | baseline | stretch
+    </h1>
+    <h3>align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值为auto，表示继承父元素的align-items属性，如果没有父元素，则等同于stretch。</h3>
+
+    <h4>align-self:auto(默认值)</h4>
+    <div id="container01" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+
+    <h4>align-self:flex-end,center,auto（默认值）;</h4>
+    <p>设置item01的align-self:flex-end; 设置item02的align-self:center;</p>
+    <div id="container01" class="container">
+        <div id="item01" class="item" style="align-self:flex-end;">
+            item01
+        </div>
+        <div id="item02" class="item" style="align-self:center;">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+
+    <h4>align-self:flex-end,auto,auto;</h4>
+    <p>设置3个item的height:auto; 设置item01的align-self:flex-end; 设置item02的align-self:center;</p>
+    <div id="container01" class="container">
+        <div id="item01" class="item heightAuto" style="align-self:flex-end;">
+            item01
+        </div>
+        <div id="item02" class="item heightAuto" style="align-self:center;">
+            item02
+        </div>
+        <div id="item03" class="item heightAuto">
+            item03
+        </div>
+    </div>
+</body>
+
+</html>

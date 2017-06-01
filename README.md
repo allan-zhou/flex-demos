@@ -13,6 +13,5 @@
 - flex-grow: [number]，默认值为0,
 - flex-shink: [number]，默认值为1
 - flex-basis:[length] | auto， 默认值为auto
-- align-self:auto | flex-start | flex-end | center | baseline | stretch
+- align-self:auto(默认值) | flex-start | flex-end | center | baseline | stretch
 
-# demo01
