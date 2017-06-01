@@ -1,0 +1,112 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo07</title>
+    <style>
+        .item {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid #000;
+            width: 800px;
+            height: 180px;
+            margin-bottom: 50px;
+            /*justify-content: center;
+        align-items: center;*/
+        }
+
+        #item01 {
+            background-color: aliceblue;
+        }
+
+        #item02 {
+            background-color: antiquewhite;
+        }
+
+        #item03 {
+            background-color: aqua;
+        }
+
+        #item04 {
+            background-color: aquamarine;
+        }
+
+        #item05 {
+            background-color: azure;
+        }
+
+        #item06 {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        flex-grow: [number]，默认值为0,
+    </h1>
+    <h3>flex-grow属性定义项目的放大比例，默认为0，即如果存在剩余空间，也不放大。</h3>
+
+    <h4>未设置flex-grow</h4>
+    <div id="container01" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+
+    <h4>flex-grow设置为：1,1,1（或相同的值）</h4>
+    <p>item01、item02、item03等分剩余空间</p>
+    <div id="container01" class="container">
+        <div id="item01" class="item" style="flex-grow:2;">
+            item01
+        </div>
+        <div id="item02" class="item" style="flex-grow:2;">
+            item02
+        </div>
+        <div id="item03" class="item" style="flex-grow:2;">
+            item03
+        </div>
+    </div>
+
+    <h4>flex-grow设置为：1,1,2</h4>
+    <p>item01、item02增长大小相同，item03增长的大小是item01、item02的2倍。</p>
+    <div id="container01" class="container">
+        <div id="item01" class="item" style="flex-grow:1;">
+            item01
+        </div>
+        <div id="item02" class="item" style="flex-grow:1;">
+            item02
+        </div>
+        <div id="item03" class="item" style="flex-grow:2;">
+            item03
+        </div>
+    </div>
+
+    <h4>flex-grow设置为：0,1,3</h4>
+    <p>item01不变，item03增长的大小是item02的3倍。</p>
+    <div id="container01" class="container">
+        <div id="item01" class="item" style="flex-grow:0;">
+            item01
+        </div>
+        <div id="item02" class="item" style="flex-grow:1;">
+            item02
+        </div>
+        <div id="item03" class="item" style="flex-grow:3;">
+            item03
+        </div>
+    </div>
+</body>
+
+</html>
