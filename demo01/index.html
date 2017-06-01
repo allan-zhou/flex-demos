@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html>
+<header>
+    <title>demo01</title>
+    <style>
+        .item {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+
+        #item01 {
+            background-color: aliceblue;
+        }
+
+        #item02 {
+            background-color: antiquewhite;
+        }
+
+        #item03 {
+            background-color: aqua;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid #000;
+            width: 800px;
+            height: 200px;
+            margin-bottom: 10px;
+            /*justify-content: center;
+        align-items: center;*/
+        }
+
+        #container01 {
+            flex-direction: row;
+        }
+
+        #container02 {
+            flex-direction: row-reverse;
+        }
+
+        #container03 {
+            flex-direction: column;
+        }
+
+        #container04 {
+            flex-direction: column-reverse;
+        }
+    </style>
+</header>
+
+<body>
+    <h1>
+        flex-direction:row | row-reverse | column | column-reverse
+    </h1>
+    <div id="container01" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+
+    </div>
+
+    <div id="container02" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+
+    <div id="container03" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+
+    <div id="container04" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+</body>
+
+</html>
