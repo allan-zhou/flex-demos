@@ -1,0 +1,132 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>demo02</title>
+    <style>
+        .item {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+
+        #item01 {
+            background-color: aliceblue;
+        }
+
+        #item02 {
+            background-color: antiquewhite;
+            
+        }
+
+        #item03 {
+            background-color: aqua;
+        }
+
+        #item04 {
+            background-color: aquamarine;
+            height: 120px; 
+        }
+
+        #item05 {
+            background-color: azure;
+        }
+
+        #item06 {
+            background-color: beige;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid #000;
+            width: 500px;
+            height: 180px;
+            margin-bottom: 50px;
+            /*justify-content: center;
+        align-items: center;*/
+        }
+
+        #container01 {
+            /*flex-direction: row;*/
+            flex-wrap:nowrap
+        }
+
+        #container02 {
+            flex-wrap:wrap
+        }
+
+        #container03 {
+            flex-wrap:wrap-reverse
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        flex-wrap:nowrap | wrap | wrap-reverse
+    </h1>
+    <div id="container01" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+        <div id="item06" class="item">
+            item06
+        </div>
+    </div>
+
+    <div id="container02" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+        <div id="item06" class="item">
+            item06
+        </div>
+    </div>
+
+    <div id="container03" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+        <div id="item06" class="item">
+            item06
+        </div>
+    </div>
+</body>
+
+</html>
