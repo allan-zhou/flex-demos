@@ -5,7 +5,7 @@
 - flex-flow:[flex-direction][flex-wrap]
 - justify-content:flex-start(默认值) | flex-end | center | space-between | space-around
 - align-items:fel-start | flex-end | center | baseline | streth(默认值)
-- align-content: flex-start | flex-end | center | space-between | space-around | stretch
+- align-content: flex-start | flex-end | center | space-between | space-around | stretch(默认值)
 
 # Flex项目
 - order

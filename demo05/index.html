@@ -1,0 +1,350 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo05</title>
+    <style>
+        .item {
+            border: 1px solid #000;
+            width: 50px;
+            height: 50px;
+        }
+
+        #item01 {
+            background-color: aliceblue;
+        }
+
+        #item02 {
+            background-color: antiquewhite;
+        }
+
+        #item03 {
+            background-color: aqua;
+            width: 60px;
+        }
+
+        #item04 {
+            background-color: aquamarine;
+        }
+
+        #item05 {
+            background-color: azure;
+        }
+
+        #item06 {
+            background-color: beige;
+            width: 65px;
+        }
+
+        #item07 {
+            background-color:bisque;
+        }
+
+        #item08 {
+            background-color:bisque;
+        }
+
+        #item09 {
+            background-color:blanchedalmond;
+        }
+
+        #item10 {
+            background-color:blue;
+            width: 60px;
+        }
+
+        #item11 {
+            background-color:blueviolet;
+        }
+
+        #item12 {
+            background-color:brown;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid #000;
+            width: 300px;
+            height: 180px;
+            margin-bottom: 30px;
+        }
+
+        #container01 {
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        #container02 {
+            flex-wrap: wrap;
+            align-content: flex-end;
+        }
+
+        #container03 {
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        #container04 {
+            flex-wrap: wrap;
+            align-content: space-between;
+        }
+
+        #container05 {
+            flex-wrap: wrap;
+            align-content: space-around;
+        }
+
+        #container06 {
+            flex-wrap: wrap;
+            align-content: stretch;
+        }
+
+        .heightAuto {
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        align-content:flex-start | flex-end | center | space-between | space-around | stretch(默认值)
+    </h1>
+    <h3>align-content属性定义了多根轴线的对齐方式。如果项目只有一根轴线，该属性不起作用。</h3>
+    <div id="container01" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+        <div id="item06" class="item">
+            item06
+        </div>
+        <div id="item07" class="item">
+            item07
+        </div>
+        <div id="item08" class="item">
+            item08
+        </div>
+        <div id="item09" class="item">
+            item09
+        </div>
+        <div id="item10" class="item">
+            item10
+        </div>
+        <div id="item11" class="item">
+            item11
+        </div>
+        <div id="item12" class="item">
+            item12
+        </div>
+    </div>
+
+    <div id="container02" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+        <div id="item06" class="item">
+            item06
+        </div>
+        <div id="item07" class="item">
+            item07
+        </div>
+        <div id="item08" class="item">
+            item08
+        </div>
+        <div id="item09" class="item">
+            item09
+        </div>
+        <div id="item10" class="item">
+            item10
+        </div>
+        <div id="item11" class="item">
+            item11
+        </div>
+        <div id="item12" class="item">
+            item12
+        </div>
+    </div>
+
+    <div id="container03" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+        <div id="item06" class="item">
+            item06
+        </div>
+        <div id="item07" class="item">
+            item07
+        </div>
+        <div id="item08" class="item">
+            item08
+        </div>
+        <div id="item09" class="item">
+            item09
+        </div>
+        <div id="item10" class="item">
+            item10
+        </div>
+        <div id="item11" class="item">
+            item11
+        </div>
+        <div id="item12" class="item">
+            item12
+        </div>
+    </div>
+
+    <div id="container04" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+        <div id="item06" class="item">
+            item06
+        </div>
+        <div id="item07" class="item">
+            item07
+        </div>
+        <div id="item08" class="item">
+            item08
+        </div>
+        <div id="item09" class="item">
+            item09
+        </div>
+        <div id="item10" class="item">
+            item10
+        </div>
+        <div id="item11" class="item">
+            item11
+        </div>
+        <div id="item12" class="item">
+            item12
+        </div>
+    </div>
+
+    <div id="container05" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+        <div id="item04" class="item">
+            item04
+        </div>
+        <div id="item05" class="item">
+            item05
+        </div>
+        <div id="item06" class="item">
+            item06
+        </div>
+        <div id="item07" class="item">
+            item07
+        </div>
+        <div id="item08" class="item">
+            item08
+        </div>
+        <div id="item09" class="item">
+            item09
+        </div>
+        <div id="item10" class="item">
+            item10
+        </div>
+        <div id="item11" class="item">
+            item11
+        </div>
+        <div id="item12" class="item">
+            item12
+        </div>
+    </div>
+
+    <h3>stretch 为默认值，如果项目未设置高度或设为auto，将占满整个容器的高度。</h3>
+    <div id="container06" class="container">
+        <div id="item01" class="item heightAuto">
+            item01
+        </div>
+        <div id="item02" class="item heightAuto">
+            item02
+        </div>
+        <div id="item03" class="item heightAuto" style="height:auto;">
+            item03
+        </div>
+        <div id="item04" class="item heightAuto">
+            item04
+        </div>
+        <div id="item05" class="item heightAuto">
+            item05
+        </div>
+        <div id="item06" class="item heightAuto" style="height:auto;">
+            item06
+        </div>
+        <div id="item07" class="item heightAuto">
+            item07
+        </div>
+        <div id="item08" class="item heightAuto">
+            item08
+        </div>
+        <div id="item09" class="item heightAuto">
+            item09
+        </div>
+        <div id="item10" class="item heightAuto" style="height:auto;">
+            item10
+        </div>
+        <div id="item11" class="item heightAuto">
+            item11
+        </div>
+        <div id="item12" class="item heightAuto">
+            item12
+        </div>
+    </div>
+</body>
+
+</html>
