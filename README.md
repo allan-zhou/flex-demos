@@ -1,10 +1,10 @@
 # Flex容器
 - display:flex
-- flex-direction:row | row-reverse | column | column-reverse
-- flex-wrap:nowrap | wrap | wrap-reverse
+- flex-direction:row(默认值) | row-reverse | column | column-reverse
+- flex-wrap:nowrap(默认值) | wrap | wrap-reverse
 - flex-flow:[flex-direction][flex-wrap]
-- justify-content:flex-start | flex-end | center | space-between | space-around
-- align-item:fel-start | flex-end | center | baseline | streth
+- justify-content:flex-start(默认值) | flex-end | center | space-between | space-around
+- align-items:fel-start | flex-end | center | baseline | streth(默认值)
 - align-content: flex-start | flex-end | center | space-between | space-around | stretch
 
 # Flex项目

@@ -1,8 +1,8 @@
 <!DOCTYPE>
 <html>
-
 <head>
-    <title>demo02</title>
+    <meta charset="UTF-8">
+    <title>demo04</title>
     <style>
         .item {
             border: 1px solid #000;
@@ -16,7 +16,6 @@
 
         #item02 {
             background-color: antiquewhite;
-            
         }
 
         #item03 {
@@ -25,7 +24,6 @@
 
         #item04 {
             background-color: aquamarine;
-            height: 120px; 
         }
 
         #item05 {
@@ -39,31 +37,40 @@
         .container {
             display: flex;
             border: 1px solid #000;
-            width: 500px;
-            height: 180px;
+            width: 800px;
+            height: 280px;
             margin-bottom: 50px;
             /*justify-content: center;
         align-items: center;*/
         }
 
         #container01 {
-            /*flex-direction: row;
-            flex-wrap:nowrap*/
+            align-items: flex-start;
         }
 
         #container02 {
-            flex-wrap:wrap
+            align-items: flex-end;
         }
 
         #container03 {
-            flex-wrap:wrap-reverse
+            align-items: center;
         }
+
+        #container04 {
+            align-items: baseline;
+        }
+
+        #container05 {
+            /*align-items: stretch;*/
+        }
+        
+        .heightAuto{ height: auto;}
     </style>
 </head>
 
 <body>
     <h1>
-        flex-wrap:nowrap | wrap | wrap-reverse
+        align-items:fel-start | flex-end | center | baseline | streth(默认值)
     </h1>
     <div id="container01" class="container">
         <div id="item01" class="item">
@@ -74,15 +81,6 @@
         </div>
         <div id="item03" class="item">
             item03
-        </div>
-        <div id="item04" class="item">
-            item04
-        </div>
-        <div id="item05" class="item">
-            item05
-        </div>
-        <div id="item06" class="item">
-            item06
         </div>
     </div>
 
@@ -96,15 +94,6 @@
         <div id="item03" class="item">
             item03
         </div>
-        <div id="item04" class="item">
-            item04
-        </div>
-        <div id="item05" class="item">
-            item05
-        </div>
-        <div id="item06" class="item">
-            item06
-        </div>
     </div>
 
     <div id="container03" class="container">
@@ -117,14 +106,35 @@
         <div id="item03" class="item">
             item03
         </div>
+    </div>
+    <div id="container04" class="container">
+        <div id="item01" class="item">
+            <h1>item02</h1>
+        </div>
+        <div id="item02" class="item">
+            <h2>item02</h2>
+        </div>
+        <div id="item03" class="item">
+            <h3>item03</h3>
+        </div>
         <div id="item04" class="item">
             item04
         </div>
-        <div id="item05" class="item">
-            item05
+    </div>
+
+    <h3>stretch 为默认值，如果项目未设置高度或设为auto，将占满整个容器的高度。</h3>
+    <div id="container05" class="container">
+        <div id="item01" class="item heightAuto">
+            item01
         </div>
-        <div id="item06" class="item">
-            item06
+        <div id="item02" class="item heightAuto">
+            item02
+        </div>
+        <div id="item03" class="item heightAuto">
+            item03
+        </div>
+        <div id="item04" class="item heightAuto">
+            item04
         </div>
     </div>
 </body>
