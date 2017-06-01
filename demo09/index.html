@@ -1,0 +1,100 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>demo09</title>
+    <style>
+        .item {
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+        }
+
+        .container {
+            display: flex;
+            border: 1px solid #000;
+            width: 400px;
+            height: 180px;
+            margin-bottom: 50px;
+            /*justify-content: center;
+        align-items: center;*/
+        }
+
+        #item01 {
+            background-color: aliceblue;
+        }
+
+        #item02 {
+            background-color: antiquewhite;
+        }
+
+        #item03 {
+            background-color: aqua;
+        }
+
+        #item04 {
+            background-color: aquamarine;
+        }
+
+        #item05 {
+            background-color: azure;
+        }
+
+        #item06 {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        flex-basis: [length] | auto，默认值为auto,
+    </h1>
+    <h3>flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。</h3>
+
+    <h4>未设置flex-basis</h4>
+    <p>它的默认值为auto，即项目的本来大小。</p>
+    <div id="container01" class="container">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+
+    <h4>未设置flex-basis</h4>
+    <p>container设置为flex-direction:column</p>
+    <div id="container01" class="container" style="flex-direction:column;">
+        <div id="item01" class="item">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+
+    <h4>flex-basis:300px,auto(100px),auto(100px)； 容器的width：400px</h4>
+    <p>3个item在占满容器并超出的情况下，当前宽度：原宽度的差值的绝对值之比为：3:1:1</p>
+    <div id="container02" class="container">
+        <div id="item01" class="item" style="flex-basis:300px;">
+            item01
+        </div>
+        <div id="item02" class="item">
+            item02
+        </div>
+        <div id="item03" class="item">
+            item03
+        </div>
+    </div>
+
+</body>
+
+</html>
